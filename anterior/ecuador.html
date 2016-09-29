@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+
+    <script>
+      // ensure the web page (DOM) has loaded
+      document.addEventListener("DOMContentLoaded", function () {
+
+           // Create a popcorn instance by calling the Youtube player plugin
+         var example = Popcorn.youtube(
+           '#video',
+           'http://www.youtube.com/watch?v=fPsMR7HvuZM' );
+
+         // add a footnote at 2 seconds, and remove it at 6 seconds
+         example.footnote({
+           start: 8,
+           end: 14,
+           text: "Vamonos al viaje para buscar lo sonidos Magicos de Ecuador!!",
+           target: "footnotediv"
+         });
+
+example.googlemap({
+   		start: 23, // Our start time in seconds
+   		end: 34, // Our end time in seconds
+   		type: "SATELLITE", //
+   		target: "googlemap",  // The id of our target DoM element
+    		location: "ecuador", //  The location we want our map to display at
+    		zoom: 1 // Setting the zoom that we would like
+            });
+
+         // play the video right away
+         example.play();
+
+      }, false);
+    </script>
+  </head>
+  <body>
+    <div id="video" style="width: 360px; height: 300px;" ></div>
+    <div id="footnotediv"></div>
+<div id="googlemap"></div>
+  </body>
+</html>

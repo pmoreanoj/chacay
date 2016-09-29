@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+.admin {
+	float: left;
+	height: 60px;
+	width: 180px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+}
+.admin a img {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	text-align: left!important;
+	margin-right: 10px;
+}
+
+.admin a{
+	background-image: url(../imagenes/botones/up.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 60px;
+	width: 180px;
+	color: #FFF;
+	text-decoration: none;
+	padding-top: 15px;
+	text-align: center;
+}
+.admin a:hover {
+	background-image: url(../imagenes/botones/over.png);
+	background-repeat: no-repeat;
+}
